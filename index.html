@@ -53,6 +53,13 @@
                 height: 350px;
             }
         }
+        .prompt-text.is-clamped {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 15;
+            line-clamp: 15;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-custom-muted selection:text-white">
@@ -156,24 +163,24 @@
                 <h2 class="text-2xl font-black text-custom-dark">본 보고서에서 확인할 수 있는 핵심 4가지</h2>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-custom-bg/60 rounded-lg p-4 text-center border border-custom-muted/30">
+                <div class="bg-custom-bg/60 rounded-lg p-4 pt-10 pb-10 text-center border border-custom-muted/30">
                     <div class="w-8 h-8 mx-auto mb-2 rounded bg-custom-p1 text-custom-dark flex items-center justify-center font-black text-xs border border-custom-p2">01</div>
-                    <div class="font-bold text-sm text-custom-dark">연도별 범죄 추이</div>
+                    <div class="m-5 font-bold text-3xl text-custom-dark">연도별 범죄 추이</div>
                     <div class="text-xs text-custom-muted mt-1">2021~2025년 급증 분석</div>
                 </div>
-                <div class="bg-custom-bg/60 rounded-lg p-4 text-center border border-custom-muted/30">
+                <div class="bg-custom-bg/60 rounded-lg p-5 pt-10 pb-10  text-center border border-custom-muted/30">
                     <div class="w-8 h-8 mx-auto mb-2 rounded bg-custom-p2 text-custom-dark flex items-center justify-center font-black text-xs">02</div>
-                    <div class="font-bold text-sm text-custom-dark">10대 저연령화</div>
+                    <div class="m-5 font-bold text-3xl text-custom-dark">10대 저연령화</div>
                     <div class="text-xs text-custom-muted mt-1">피의자 60% 이상 청소년</div>
                 </div>
-                <div class="bg-custom-bg/60 rounded-lg p-4 text-center border border-custom-muted/30">
+                <div class="bg-custom-bg/60 rounded-lg p-5 pt-10 pb-10  text-center border border-custom-muted/30">
                     <div class="w-8 h-8 mx-auto mb-2 rounded bg-custom-p3 text-white flex items-center justify-center font-black text-xs">03</div>
-                    <div class="font-bold text-sm text-custom-dark">법률·수사 대응</div>
+                    <div class="m-5 font-bold text-3xl text-custom-dark">법률·수사 대응</div>
                     <div class="text-xs text-custom-muted mt-1">성폭력처벌법 & 위장수사</div>
                 </div>
-                <div class="bg-custom-bg/60 rounded-lg p-4 text-center border border-custom-muted/30">
+                <div class="bg-custom-bg/60 rounded-lg p-5 pt-10 pb-10 text-center border border-custom-muted/30">
                     <div class="w-8 h-8 mx-auto mb-2 rounded bg-custom-p4 text-white flex items-center justify-center font-black text-xs">04</div>
-                    <div class="font-bold text-sm text-custom-dark">AI 신뢰성 검증</div>
+                    <div class="m-5 font-bold text-3xl text-custom-dark">AI 신뢰성 검증</div>
                     <div class="text-xs text-custom-muted mt-1">Gemini 환각·오류 분석</div>
                 </div>
             </div>
@@ -652,20 +659,20 @@
                                         <span class="px-2.5 py-1 rounded text-xs font-black bg-custom-muted/20 text-custom-dark">일치</span>
                                     </td>
                                 </tr>
-                                <tr class="bg-custom-p4/10 hover:bg-custom-p4/20">
+                                <tr class="bg-[#88304E]/10 hover:bg-[#88304E]/20">
                                     <th scope="row" class="px-6 py-3.5 font-bold text-custom-dark">2024년 범죄</th>
-                                    <td class="px-6 py-3.5 text-custom-p4 font-black">1,200여 건</td>
+                                    <td class="px-6 py-3.5 text-[#88304E] font-black">1,200여 건</td>
                                     <td class="px-6 py-3.5">964건</td>
                                     <td class="px-6 py-3.5 text-center">
-                                        <span class="px-2.5 py-1 rounded text-xs font-black bg-custom-p4 text-white shadow-sm">오류</span>
+                                        <span class="px-2.5 py-1 rounded text-xs font-black bg-[#88304E] text-white shadow-sm">오류</span>
                                     </td>
                                 </tr>
-                                <tr class="bg-custom-p4/10 hover:bg-custom-p4/20">
+                                <tr class="bg-[#88304E]/10 hover:bg-[#88304E]/20">
                                     <th scope="row" class="px-6 py-3.5 font-bold text-custom-dark">2025년 범죄</th>
-                                    <td class="px-6 py-3.5 text-custom-p4 font-black">1,553건</td>
+                                    <td class="px-6 py-3.5 text-[#88304E] font-black">1,553건</td>
                                     <td class="px-6 py-3.5">3,411건</td>
                                     <td class="px-6 py-3.5 text-center">
-                                        <span class="px-2.5 py-1 rounded text-xs font-black bg-custom-p4 text-white shadow-sm">오류</span>
+                                        <span class="px-2.5 py-1 rounded text-xs font-black bg-[#88304E] text-white shadow-sm">오류</span>
                                     </td>
                                 </tr>
                                 <tr class="hover:bg-custom-bg/30">
@@ -702,9 +709,9 @@
                         </div>
                         <div class="flex items-center justify-between">
                             <span class="text-custom-muted flex items-center gap-1.5">
-                                <span class="w-3 h-3 rounded-sm bg-custom-main"></span> 오류 항목:
+                                <span class="w-3 h-3 rounded-sm  bg-[#88304E]"></span> 오류 항목:
                             </span>
-                            <span class="font-extrabold text-custom-main">2개 항목</span>
+                            <span class="font-extrabold text-[#88304E]">2개 항목</span>
                         </div>
                     </div>
                 </div>
@@ -736,6 +743,9 @@
                 <button id="tab-btn-3" onclick="switchTab(3)" class="py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-bg text-custom-dark hover:bg-custom-muted/20 transition focus:outline-none">
                     탭 3: 웹페이지(대시보드) 제작 프롬프트
                 </button>
+                <button id="tab-btn-4" onclick="switchTab(4)" class="py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-bg text-custom-dark hover:bg-custom-muted/20 transition focus:outline-none">
+                    탭 4: 오류 및 문제해결
+                </button>
             </div>
 
             <!-- Tab Content 1 -->
@@ -756,21 +766,21 @@
                         Gemini 답변 캡처 이미지 (총 5개)
                     </h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                        <div class="border border-custom-muted/40 rounded-lg h-44 flex flex-col items-center justify-center p-4 text-center bg-white">
-                            <span class="text-[10px] font-semibold text-custom-muted mt-1"><img src="research01-1.png" alt="답변 캡처 #1" class="w-full h-full object-cover"></span>
-                        </div>
-                        <div class="border border-custom-muted/40 rounded-lg h-44 flex flex-col items-center justify-center p-4 text-center bg-white">
-                            <span class="text-[10px] font-semibold text-custom-muted mt-1"><img src="research01-2.png" alt="답변 캡처 #2" class="w-full h-full object-cover"></span>
-                        </div>
-                        <div class="border border-custom-muted/40 rounded-lg h-44 flex flex-col items-center justify-center p-4 text-center bg-white">
-                            <span class="text-[10px] font-semibold text-custom-muted mt-1"><img src="research01-3.png" alt="답변 캡처 #3" class="w-full h-full object-cover"></span>
-                        </div>
-                        <div class="border border-custom-muted/40 rounded-lg h-44 flex flex-col items-center justify-center p-4 text-center bg-white">
-                            <span class="text-[10px] font-semibold text-custom-muted mt-1"><img src="research01-4.png" alt="답변 캡처 #4" class="w-full h-full object-cover"></span>
-                        </div>
-                        <div class="border border-custom-muted/40 rounded-lg h-44 flex flex-col items-center justify-center p-4 text-center bg-white">
-                            <span class="text-[10px] font-semibold text-custom-muted mt-1"><img src="research01-5.png" alt="답변 캡처 #5" class="w-full h-full object-cover"></span>
-                        </div>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-44 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research01-1.png" alt="답변 캡처 #1" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-44 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research01-2.png" alt="답변 캡처 #2" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-44 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research01-3.png" alt="답변 캡처 #3" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-44 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research01-4.png" alt="답변 캡처 #4" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-44 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research01-5.png" alt="답변 캡처 #5" class="w-full h-full object-cover object-top rounded">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -793,18 +803,15 @@
                         Gemini 답변 캡처 이미지 (총 3개)
                     </h3>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                        <div class="border border-custom-muted/40 rounded-lg h-48 flex flex-col items-center justify-center p-4 text-center bg-white">
-                            <span class="text-xs text-custom-dark font-bold">캡처 이미지 영역</span>
-                            <span class="text-[10px] font-semibold text-custom-muted mt-1">PDF 답변 캡처 #1</span>
-                        </div>
-                        <div class="border border-custom-muted/40 rounded-lg h-48 flex flex-col items-center justify-center p-4 text-center bg-white">
-                            <span class="text-xs text-custom-dark font-bold">캡처 이미지 영역</span>
-                            <span class="text-[10px] font-semibold text-custom-muted mt-1">PDF 답변 캡처 #2</span>
-                        </div>
-                        <div class="border border-custom-muted/40 rounded-lg h-48 flex flex-col items-center justify-center p-4 text-center bg-white">
-                            <span class="text-xs text-custom-dark font-bold">캡처 이미지 영역</span>
-                            <span class="text-[10px] font-semibold text-custom-muted mt-1">PDF 답변 캡처 #3</span>
-                        </div>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-48 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research02-1.png" alt="답변 캡처 #1" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-48 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research02-2.png" alt="답변 캡처 #2" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-48 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research02-3.png" alt="답변 캡처 #3" class="w-full h-full object-cover object-top rounded">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -819,25 +826,264 @@
                         </div>
                         <span class="text-xs text-custom-muted font-bold">단일 파일 대시보드 빌드</span>
                     </div>
+                    <div class="prompt-wrap">
+                        <p class="prompt-text is-clamped text-xs sm:text-sm text-custom-dark bg-white p-4 rounded leading-relaxed font-mono whitespace-pre-line border border-custom-muted/30">
+                        "아래 [자료]만 사용해서 "딥페이크 범죄 현황과 생성형 AI 분석의 신뢰성 검증"을 주제로 한 단일 페이지 웹사이트를 Canvas에 만들어줘.
+
+
+
+                        ## 반드시 지킬 규칙
+
+                        1. 모든 숫자는 [자료]에 적힌 값을 그대로 사용해. 반올림, 추정, 새로운 통계 추가는 하지 마.
+
+                        2. [자료]에 없는 사례, 기사, 수치, 출처는 지어내지 마. 내용이 비는 곳은 회색 점선 박스로 "캡처 이미지 삽입 예정"이라는 자리표시만 넣어.
+
+                        3. HTML, CSS, JavaScript를 한 파일에 작성하고, 차트는 Chart.js(CDN)로 그려줘.
+
+                        4. 모든 텍스트는 한국어로 작성해.
+
+                        5. 모든 차트와 표 아래에 출처와 집계 기간을 작은 글씨로 표시해.
+
+
+
+                        ## 디자인
+
+                        - 사회 문제를 다루는 보고서이므로 차분한 톤: 다크 네이비 배경, 흰색 글자, 강조색은 빨간색 하나만 사용.
+
+                        - 상단에 고정 내비게이션 바를 두고, 클릭하면 각 섹션으로 부드럽게 이동.
+
+                        - 모바일에서도 깨지지 않는 반응형 레이아웃.
+
+                        - 사람 얼굴 사진이나 선정적인 이미지는 사용하지 마. 아이콘과 차트 위주로 구성해.
+
+
+
+                        ## 페이지 구성
+
+
+
+                        ### 섹션 1. 표지
+
+                        - 제목: 딥페이크 범죄 현황과 생성형 AI 분석의 신뢰성 검증
+
+                        - 부제: 한국 딥페이크 범죄 통계를 조사하고, Gemini의 분석 결과를 원본 자료와 대조했습니다.
+
+                        - 핵심 수치 카드 3개: "2025년 허위영상물 범죄 1,553건", "피의자 중 10대 61.8%", "집중단속 후 일평균 접수 1.85건 → 8.80건"
+
+
+
+                        ### 섹션 2. 연도별 딥페이크 범죄 현황
+
+                        (1) 막대 차트 "딥페이크 관련 경찰 신고 건수"
+
+                        - 2021년 156건, 2022년 160건, 2023년 180건, 2024년(1.1~10.25) 964건
+
+                        - 출처: 관계부처 합동 딥페이크 성범죄 대응 강화방안 / 경찰청
+
+                        - 2024년 막대에는 "10월 25일까지 집계" 주석 표시
+
+
+
+                        (2) 그룹 막대 차트 "딥페이크 성범죄 피해 지표 비교 (2021~2024.10)"
+
+                        - 방심위 심의 건수: 1,913 / 3,574 / 7,187 / 10,305
+
+                        - 디지털성범죄피해자지원센터 지원 피해자: 176 / 212 / 423 / 1,201
+
+                        - 딥페이크 관련 경찰 신고: 156 / 160 / 180 / 964
+
+                        - x축: 2021, 2022, 2023, 2024.10
+
+                        - 설명: 2021년 대비 2024년 10월 기준 방심위 심의는 5배, 피해자 지원은 약 7배, 경찰 신고는 6배 이상 증가
+
+
+
+                        (3) 2024년 집중단속 전후 비교 카드
+
+                        - 집중단속 이전(1.1~8.27): 445건, 일평균 1.85건
+
+                        - 집중단속 이후(8.28~10.25): 519건, 일평균 8.80건
+
+                        - 최고치: 일평균 17.57건(9.7~9.13) → 최근: 일평균 2.86건(10.18~10.25)
+
+
+
+                        (4) 2025년 수치 카드 (경찰청, 2024.11.1~2025.10.31)
+
+                        - 허위영상물 범죄 발생 1,553건
+
+                        - 포괄적 허위영상(딥페이크) 성범죄: 발생 1,827건, 검거 1,462건, 검거 인원 1,438명(구속 72명), 검거율 80.0%
+
+
+
+                        ### 섹션 3. 범죄 유형별 현황
+
+                        도넛 차트 "사이버성폭력 범죄 유형별 발생 현황 (2024.11.1~2025.10.31, 총 4,413건)"
+
+                        - 허위영상물(딥페이크) 1,553건 (35.2%)
+
+                        - 아동·청소년 성착취물 1,513건 (34.3%)
+
+                        - 불법촬영물 857건 (19.4%)
+
+                        - 불법성영상물 유포 등 490건 (11.1%)
+
+                        - 출처: 경찰청 국가수사본부 사이버범죄수사과
+
+
+
+                        ### 섹션 4. 피의자 연령 분석
+
+                        (1) 가로 막대 차트 "허위영상(딥페이크) 성범죄 피의자 연령별 현황 (총 1,449명, 2024.11~2025.10)"
+
+                        - 10대 895명(61.8%), 20대 438명(30.2%), 30대 90명(6.2%), 40대 16명(1.1%), 50대 이상 10명(0.7%)
+
+                        - 강조 문구: 10대와 20대가 전체의 92.0%
+
+
+
+                        (2) 보조 카드 "2024년 검거 현황 (2024.1.1~10.25)"
+
+                        - 검거 506명, 구속 23명
+
+                        - 10대 411명(촉법 78명), 20대 77명, 30대 13명, 40대 2명, 50대 이상 3명
+
+
+
+                        ### 섹션 5. 정부 및 수사기관 대응
+
+                        카드 4개로 구성
+
+                        - 2024.10.16 개정 성폭력처벌법 시행: 반포 목적이 없어도 소지·구입·저장·시청 처벌
+
+                        - 2025.6.4 개정 성폭력처벌법 시행: 성인 피해자 사건에도 위장수사 가능
+
+                        - 방송미디어통신심의위원회: 피해 영상물 36,135건 삭제·차단 요청
+
+                        - 디지털성범죄피해자지원센터: 피해자 28,356건 연계
+
+
+
+                        ### 섹션 6. Gemini 분석 결과 vs 원본 자료 비교
+
+                        (1) 분석에 사용한 원본 자료 표
+
+                        | 자료 | 종류 | 기본정보 | 분석 목적 |
+
+                        | 자료 1 | PDF | 3페이지 | 2026년 딥페이크 범죄 분석 |
+
+                        | 자료 2 | 이미지(표) | 5개 | 연도별 범죄율 분석 |
+
+                        | 자료 3 | 텍스트 | 4파트 | 연도별 범죄율 및 유형 분석 |
+
+
+
+                        (2) 비교 표 (결과 열은 "일치"는 초록 배지, "오류"는 빨간 배지로 표시)
+
+                        | 항목 | Gemini | 원본 | 결과 |
+
+                        | 2021년 범죄 | 156건 | 156건 | 일치 |
+
+                        | 2022년 범죄 | 160건 | 160건 | 일치 |
+
+                        | 2023년 범죄 | 180건 | 180건 | 일치 |
+
+                        | 2024년 범죄 | 1,200여 건 | 964건 | 오류 |
+
+                        | 2025년 범죄 | 1,553건 | 3,411건 | 오류 |
+
+                        | PDF 분석 | - | - | 모두 일치 |
+
+
+
+                        (3) 요약 카드: "6개 항목 중 4개 일치, 2개 오류"를 원형 진행 바로 표시
+
+
+
+                        ### 섹션 7. 조사 과정 (프롬프트와 답변)
+
+                        두 개의 탭으로 구성하고, 각 탭 안에 "사용한 프롬프트" 박스와 "Gemini 답변 캡처" 자리표시 박스를 둬.
+
+
+
+                        탭 1: Deep Research 활용 (표 & 텍스트 분석)
+
+                        프롬프트 원문:
+
+                        "한국의 딥페이크 범죄 발생 현황과 증가 추이를 조사해줘. 조사 범위는 가능한 최신 자료를 포함하되, 연도별 비교가 가능한 공식 통계를 우선적으로 사용해줘. 다음 내용을 중심으로 조사해줘. 1. 연도별 딥페이크 관련 범죄 발생 건수 2. 범죄 유형별 현황 3. 피해자 및 피의자 관련 통계 4. 딥페이크 성범죄 관련 통계 5. 최근 몇 년간 범죄가 어떻게 변화했는지 6. 실제 딥페이크 범죄 사례 7. 범죄 증가의 원인으로 언급되는 요인 8. 정부 및 수사기관의 대응 현황. 자료는 경찰청, 정부기관, 공공기관, 법률·정책기관, 공식 통계 등 신뢰할 수 있는 출처를 우선적으로 사용해줘. 각 통계마다 출처와 자료의 발표 연도 또는 조사 기간을 명확하게 표시해줘. 서로 다른 출처에서 통계 수치가 다를 경우 그 차이도 설명해줘."
+
+                        답변 캡처 자리표시 5개
+
+
+
+                        탭 2: PDF 분석 (Native Multimodal 활용)
+
+                        프롬프트 원문:
+
+                        "첨부한 PDF는 한국의 딥페이크 범죄와 관련된 원본 자료야. 이 자료를 단순 요약하지 말고 다음 항목을 중심으로 분석해줘. 1. 자료의 제목과 발행기관 2. 자료의 조사 기간 3. 전체 페이지 수 4. 딥페이크 범죄와 관련된 핵심 통계 5. 연도별 범죄 발생 건수 6. 증가 또는 감소 추세 7. 표에서 확인할 수 있는 주요 특징 8. 자료에서 직접 확인할 수 있는 사실과 해석을 구분. 자료에 명시되지 않은 내용을 추측하지 말 것. 특히 통계 수치는 원본 자료에 적힌 값을 그대로 제시하고, 가능하면 해당 내용이 PDF의 몇 페이지에 있는지도 함께 표시해줘."
+
+                        답변 캡처 자리표시 3개
+
+
+
+                        ### 섹션 8. 결론
+
+                        아래 문장을 그대로 사용하고, 핵심 문장은 굵게 표시해줘.
+
+                        "제미나이는 서로 다른 형태의 자료를 한 번에 분석하고 자료 간의 내용을 비교하는 데 활용할 수 있었으며, 조사한 통계와 내용을 시각적인 결과물로 제작하는 과정에서도 편리하게 사용할 수 있었다. 특히 텍스트뿐만 아니라 이미지, 파일 자체의 정보를 함께 분석할 수 있어 하나의 자료만 분석했을 때보다 다양한 관점에서 내용을 확인할 수 있었다.
+
+                        그러나 제미나이의 분석 결과가 항상 원본 자료와 동일한 것은 아니었으며, 일부 수치나 세부 내용을 잘못 인식하거나 프롬프트의 애매한 기준을 알아서 판단하여 생긴 오류, 잘못된 정보를 가져와 사실과 다른 경우가 발생할 수 있음을 확인하였다. 따라서 AI가 제공한 결과를 그대로 사용하는 것보다는 원본 자료와 대조하고 출처를 확인하는 과정이 필요하다는 점을 확인하였다."
+
+
+
+                        ### 푸터
+
+                        "인공지능 4주차 팀 과제" 와 출처 목록(경찰청 국가수사본부 사이버범죄수사과, 관계부처 합동 딥페이크 성범죄 대응 강화방안, 디지털 성범죄 피해자 지원센터) "
+                    
+                        </p>
+                        <button type="button" onclick="togglePrompt(this)" class="prompt-toggle hidden mt-2 text-xs font-extrabold text-custom-main hover:underline focus:outline-none">
+                            전문 보기 ▼
+                        </button>
+                    </div></p>
+                </div>
+                                <div>
+                    <h3 class="text-sm font-extrabold text-custom-dark mb-3">
+                        Gemini 답변 캡처 이미지 (총 3개)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-48 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research03.png" alt="답변 캡처 #1" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- Tab Content 2 -->
+            <div id="tab-content-4" class="hidden space-y-6">
+                <!-- Prompt Box -->
+                <div class="bg-custom-bg/40 rounded-lg p-6 border border-custom-muted/30">
+                    <div class="text-custom-main font-extrabold text-sm mb-3">
+                        사용한 프롬프트 원문 (PDF Native Multimodal)
+                    </div>
                     <p class="text-xs sm:text-sm text-custom-dark bg-white p-4 rounded leading-relaxed font-mono whitespace-pre-line border border-custom-muted/30">
-"대한민국 딥페이크 범죄 현황과 생성형 AI(Gemini) 분석 결과 신뢰성 검증 보고서를 반응형 웹 인터랙티브 대시보드로 제작해줘.
-
-[디자인 & 색상 지침]
-- 테마 색상: #1B3C53, #234C6A, #456882, #E3E3E3 Palette 사용
-- Font: Noto Sans KR, Tailwind CSS 및 Chart.js 활용
-- 모바일/데스크톱 완벽 대응, 탭 전환 및 인터랙티브 그래프 적용
-
-[포함할 주요 섹션 구조]
-1. 표지 (Key Stat Cards: 1,553건, 10대 피의자 61.8%, 집중단속 전후 일평균 변화)
-2. 연도별 현황 (경찰 신고 건수 막대 그래프, 방심위·지원의 비교 그룹 막대 그래프)
-3. 유형별 현황 (사이버성폭력 도넛 차트 및 순위 카드)
-4. 피의자 연령 분석 (연령대별 가로 막대 그래프 및 촉법소년 통계)
-5. 정부 & 수사기관 대응 (개정 성폭력처벌법, 위장수사, 삭제·차단 조치)
-6. Gemini vs 원본 자료 비교 (데이터 대조표 및 정확도 게이지 차트)
-7. 조사 과정 (프롬프트 탭 및 답변 캡처 영역)
-8. 팀원 3 업무 생산성 분석 & AI 멀티모달 서비스 아이디어 제안
-9. 결론 및 시사점 (Human-in-the-loop 강조)"
+                        "사진이 칸을 넘어가지 않게 하고, 사진을 클릭하면 크게 볼 수 있도록 해줘. 그리고 프롬프트 길이가 15줄 이상 넘어가면 
+                        생략되도록 하고 클릭하면 전문을 볼 수 있게 수정해줘.""
                     </p>
+                </div>
+
+                <!-- Answer Captures Placeholders -->
+                <div>
+                    <h3 class="text-sm font-extrabold text-custom-dark mb-3">
+                        Gemini 답변 캡처 이미지 (총 3개)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-48 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research04-1.png" alt="답변 캡처 #1" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-48 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research04-2.png" alt="답변 캡처 #2" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -861,7 +1107,7 @@
                 <div class="flex items-center justify-between mb-4 pb-3 border-b border-custom-bg">
                     <h3 class="text-base font-extrabold text-custom-dark flex items-center gap-2">
                         <span class="w-3 h-3 rounded-sm bg-custom-main"></span>
-                        Gemini Workspace 연동을 통한 자료 정리 및 보고서 종합 (팀원 3)
+                        Gemini Workspace 연동을 통한 자료 정리 및 보고서 종합
                     </h3>
                     <span class="px-2.5 py-1 rounded bg-custom-bg text-custom-dark text-xs font-extrabold">협업 인텔리전스</span>
                 </div>
@@ -931,30 +1177,11 @@
                                 <td class="px-5 py-4 text-center font-black text-custom-p3">
                                     60분 → 1분
                                 </td>
-                                <td class="px-5 py-4 text-center">
-                                    <span class="px-2.5 py-1 rounded bg-custom-p3 text-white text-xs font-extrabold shadow-sm">60배 단축</span>
+                                <td class="px-5 py-4 text-center bg-[#88304E] text-white">
+                                    <span class="rounded text-lg font-extrabold">60배 단축</span>
                                 </td>
                             </tr>
-                            <tr class="hover:bg-custom-bg/30">
-                                <td class="px-5 py-4 font-bold text-custom-dark">
-                                    영상 자료 통계/내용 추출
-                                </td>
-                                <td class="px-5 py-4 text-custom-muted">
-                                    사람이 영상 시청 후 텍스트 녹취록 작성 및 AI 입력<br/>
-                                    <span class="font-extrabold text-custom-dark">(약 1시간 / 60분)</span>
-                                </td>
-                                <td class="px-5 py-4 text-custom-dark">
-                                    AI에 비디오 파일/링크 직접 전달하여 비주얼 멀티모달 분석<br/>
-                                    <span class="font-extrabold text-custom-p2 text-custom-dark">(약 10분)</span>
-                                </td>
-                                <td class="px-5 py-4 text-center font-black text-custom-dark">
-                                    60분 → 10분
-                                </td>
-                                <td class="px-5 py-4 text-center">
-                                    <span class="px-2.5 py-1 rounded bg-custom-p2 text-custom-dark text-xs font-extrabold shadow-sm">6배 단축</span>
-                                </td>
-                            </tr>
-                            <tr class="hover:bg-custom-bg/30">
+                            <!-- <tr class="hover:bg-custom-bg/30">
                                 <td class="px-5 py-4 font-bold text-custom-dark">
                                     다종 자료 종합 & 문서화 (Workspace)
                                 </td>
@@ -969,10 +1196,10 @@
                                 <td class="px-5 py-4 text-center font-black text-custom-p3">
                                     120분 → 5분
                                 </td>
-                                <td class="px-5 py-4 text-center">
-                                    <span class="px-2.5 py-1 rounded bg-custom-p3 text-white text-xs font-extrabold shadow-sm">24배 단축</span>
+                                <td class="px-5 py-4 text-center bg-[#88304E] text-white">
+                                    <span class="rounded text-lg font-extrabold">24배 단축</span>
                                 </td>
-                            </tr>
+                            </tr> -->
                             <tr class="hover:bg-custom-bg/30">
                                 <td class="px-5 py-4 font-bold text-custom-dark">
                                     인터랙티브 웹 대시보드 개발
@@ -988,8 +1215,8 @@
                                 <td class="px-5 py-4 text-center font-black text-custom-p4">
                                     240분 → 15분
                                 </td>
-                                <td class="px-5 py-4 text-center">
-                                    <span class="px-2.5 py-1 rounded bg-custom-p4 text-white text-xs font-extrabold shadow-sm">16배 단축</span>
+                                <td class="px-5 py-4 text-center bg-[#88304E] text-white">
+                                    <span class="rounded text-lg font-extrabold">16배 단축</span>
                                 </td>
                             </tr>
                         </tbody>
@@ -1004,7 +1231,7 @@
                         <span class="w-3 h-3 rounded-sm bg-custom-dark"></span>
                         새로운 AI 멀티모달 서비스 아이디어 제안
                     </h3>
-                    <span class="px-2.5 py-1 rounded bg-custom-main text-white text-xs font-extrabold">팀원 3 신규 아이디어</span>
+                    <span class="px-2.5 py-1 rounded bg-custom-main text-white text-xs font-extrabold">신규 아이디어</span>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1064,15 +1291,24 @@
 
             <div class="bg-custom-dark rounded-lg p-6 sm:p-10 text-white border border-custom-main">
                 <div class="text-custom-bg text-sm sm:text-base leading-relaxed space-y-4 font-medium">
-                    <p class="bg-white/10 p-4 sm:p-5 rounded border border-white/20">
-                        <strong class="text-white font-black">제미나이는 서로 다른 형태의 자료를 한 번에 분석하고 자료 간의 내용을 비교하는 데 매우 효율적이었으며, 조사한 통계와 내용을 시각적인 결과물로 제작하는 과정에서도 뛰어난 생산성을 보여주었습니다. 특히 텍스트뿐만 아니라 이미지, 파일 자체의 정보를 다각도로 함께 분석할 수 있어 단일 문서 분석 시보다 넓은 시야를 확보할 수 있었습니다.</strong>
+                    <p class="bg-white p-4 sm:p-5 rounded border border-white">
+                        <strong class="text-custom-dark">제미나이는 서로 다른 형태의 자료를 한 번에 분석하고 자료 간의 내용을 비교하는 데 매우 효율적이었으며, 조사한 통계와 내용을 시각적인 결과물로 제작하는 과정에서도 뛰어난 생산성을 보여주었습니다. 특히 텍스트뿐만 아니라 이미지, 파일 자체의 정보를 다각도로 함께 분석할 수 있어 단일 문서 분석 시보다 넓은 시야를 확보할 수 있었습니다.</strong>
                     </p>
-                    <p class="bg-custom-p4/20 p-4 sm:p-5 rounded border border-custom-p4/60">
+                    <p class="bg-[#88304E] p-4 sm:p-5 rounded border border-[#88304E]">
                         그러나 <strong class="text-white font-black">제미나이의 분석 결과가 항상 원본 공식 자료와 완벽히 일치하는 것은 아니었으며, 일부 수치나 세부 내용을 잘못 인식하거나 프롬프트의 기준을 임의로 다르게 적용하여 생긴 환각(Hallucination) 오류, 왜곡된 정보를 사실처럼 제시하는 사례가 발생함을 확인하였습니다.</strong>
                     </p>
-                    <div class="pt-2 text-center md:text-left">
-                        <span class="inline-block px-4 py-2 rounded bg-custom-p2 text-custom-dark font-black text-sm shadow-md">
+                    <!-- <div class="pt-2 text-center md:text-left">
+                        <span class="inline-block px-4 py-2 text-white font-black text-lg border-gray-300 border rounded">
                             핵심 시사점: AI 출력 데이터는 반드시 원본 1차 자료와 교차 검증하는 인간 재검토(Human-in-the-loop) 과정이 필수적임.
+                        </span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="mt-10 rounded-lg p-6 text-white border-4 border-[#88304E]">
+                <div class="text-custom-bg text-sm sm:text-base leading-relaxed space-y-4 font-medium">
+                    <div class="pt-2 text-center md:text-cneter">
+                        <span class="inline-block px-4 py-2 text-[#88304E] font-black text-2xl">
+                            AI 출력 데이터는 반드시 원본 1차 자료와 교차 검증하는 인간 재검토 과정이 필수
                         </span>
                     </div>
                 </div>
@@ -1132,16 +1368,17 @@
             const btn1 = document.getElementById('tab-btn-1');
             const btn2 = document.getElementById('tab-btn-2');
             const btn3 = document.getElementById('tab-btn-3');
+            const btn4 = document.getElementById('tab-btn-4');
             const content1 = document.getElementById('tab-content-1');
             const content2 = document.getElementById('tab-content-2');
             const content3 = document.getElementById('tab-content-3');
-
+            const content4 = document.getElementById('tab-content-4');
             // Reset all buttons
-            [btn1, btn2, btn3].forEach(btn => {
+            [btn1, btn2, btn3, btn4].forEach(btn => {
                 if(btn) btn.className = "py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-bg text-custom-dark hover:bg-custom-muted/20 transition focus:outline-none";
             });
             // Hide all contents
-            [content1, content2, content3].forEach(cnt => {
+            [content1, content2, content3, content4].forEach(cnt => {
                 if(cnt) cnt.classList.add('hidden');
             });
 
@@ -1155,6 +1392,9 @@
             } else if (tabNum === 3) {
                 btn3.className = "py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-dark text-white transition focus:outline-none";
                 content3.classList.remove('hidden');
+            }else if (tabNum === 4) {
+                btn4.className = "py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-dark text-white transition focus:outline-none";
+                content4.classList.remove('hidden');
             }
         }
 
@@ -1375,7 +1615,7 @@
                         data: [4, 2],
                         backgroundColor: [
                             C_DARK,
-                            C_P4
+                            '#88304E'
                         ],
                         borderColor: '#FFFFFF',
                         borderWidth: 2
@@ -1392,6 +1632,57 @@
                 }
             });
         });
+        // ===== 이미지 확대 =====
+function openLightbox(btn) {
+    const img = btn.querySelector('img');
+    const box = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox-img').alt = img.alt;
+    document.getElementById('lightbox-caption').textContent = img.alt;
+    box.classList.remove('hidden');
+    box.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(e) {
+    // 배경을 클릭했을 때만 닫힘 (이미지를 클릭하면 유지)
+    if (e && e.target !== e.currentTarget) return;
+    const box = document.getElementById('lightbox');
+    box.classList.add('hidden');
+    box.classList.remove('flex');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});
+
+// ===== 프롬프트 15줄 생략 =====
+function togglePrompt(btn) {
+    const text = btn.previousElementSibling;
+    const clamped = text.classList.toggle('is-clamped');
+    btn.textContent = clamped ? '전문 보기 ▼' : '접기 ▲';
+    if (clamped) {
+        btn.closest('.prompt-wrap').scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+}
+
+// 숨겨진 탭은 높이가 0이라 처음에 측정할 수 없음
+// → ResizeObserver로 탭이 열리거나 화면 폭이 바뀔 때마다 다시 확인
+const promptObserver = new ResizeObserver((entries) => {
+    entries.forEach(({ target }) => {
+        if (!target.classList.contains('is-clamped')) return; // 펼친 상태면 버튼 유지
+        const btn = target.nextElementSibling;
+        const overflowing = target.scrollHeight > target.clientHeight + 1;
+        btn.classList.toggle('hidden', !overflowing);
+    });
+});
+document.querySelectorAll('.prompt-text').forEach((el) => promptObserver.observe(el));
     </script>
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/85 p-4 sm:p-8" onclick="closeLightbox(event)">
+    <button type="button" onclick="closeLightbox()" aria-label="닫기" class="absolute top-4 right-5 text-white/80 hover:text-white text-4xl leading-none focus:outline-none">&times;</button>
+    <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[88vh] object-contain rounded shadow-2xl bg-white">
+    <p id="lightbox-caption" class="absolute bottom-4 left-0 right-0 text-center text-white/80 text-xs sm:text-sm font-bold"></p>
+</div>
 </body>
 </html>
