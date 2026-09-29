@@ -752,13 +752,16 @@
                     탭 1: Deep Research (표 & 텍스트 분석)
                 </button>
                 <button id="tab-btn-2" onclick="switchTab(2)" class="py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-bg text-custom-dark hover:bg-custom-muted/20 transition focus:outline-none">
-                    탭 2: PDF 분석 (Native Multimodal)
+                    탭 2: PDF 분석
                 </button>
                 <button id="tab-btn-3" onclick="switchTab(3)" class="py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-bg text-custom-dark hover:bg-custom-muted/20 transition focus:outline-none">
                     탭 3: 웹페이지(대시보드) 제작 프롬프트
                 </button>
                 <button id="tab-btn-4" onclick="switchTab(4)" class="py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-bg text-custom-dark hover:bg-custom-muted/20 transition focus:outline-none">
                     탭 4: 오류 및 문제해결
+                </button>
+                <button id="tab-btn-5" onclick="switchTab(5)" class="py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-bg text-custom-dark hover:bg-custom-muted/20 transition focus:outline-none">
+                    탭 5: 최종 보고서 제작
                 </button>
             </div>
 
@@ -770,7 +773,7 @@
                         사용한 프롬프트 원문 (Deep Research)
                     </div>
                     <p class="text-xs sm:text-sm text-custom-dark bg-white p-4 rounded leading-relaxed font-mono whitespace-pre-line border border-custom-muted/30">
-"한국의 딥페이크 범죄 발생 현황과 증가 추이를 조사해줘. 조사 범위는 가능한 최신 자료를 포함하되, 연도별 비교가 가능한 공식 통계를 우선적으로 사용해줘. 다음 내용을 중심으로 조사해줘. 1. 연도별 딥페이크 관련 범죄 발생 건수 2. 범죄 유형별 현황 3. 피해자 및 피의자 관련 통계 4. 딥페이크 성범죄 관련 통계 5. 최근 몇 년간 범죄가 어떻게 변화했는지 6. 실제 딥페이크 범죄 사례 7. 범죄 증가의 원인으로 언급되는 요인 8. 정부 및 수사기관의 대응 현황. 자료는 경찰청, 정부기관, 공공기관, 법률·정책기관, 공식 통계 등 신뢰할 수 있는 출처를 우선적으로 사용해줘. 각 통계마다 출처와 자료의 발표 연도 또는 조사 기간을 명확하게 표시해줘. 서로 다른 출처에서 통계 수치가 다를 경우 그 차이도 설명해줘."
+                    "한국의 딥페이크 범죄 발생 현황과 증가 추이를 조사해줘. 조사 범위는 가능한 최신 자료를 포함하되, 연도별 비교가 가능한 공식 통계를 우선적으로 사용해줘. 다음 내용을 중심으로 조사해줘. 1. 연도별 딥페이크 관련 범죄 발생 건수 2. 범죄 유형별 현황 3. 피해자 및 피의자 관련 통계 4. 딥페이크 성범죄 관련 통계 5. 최근 몇 년간 범죄가 어떻게 변화했는지 6. 실제 딥페이크 범죄 사례 7. 범죄 증가의 원인으로 언급되는 요인 8. 정부 및 수사기관의 대응 현황. 자료는 경찰청, 정부기관, 공공기관, 법률·정책기관, 공식 통계 등 신뢰할 수 있는 출처를 우선적으로 사용해줘. 각 통계마다 출처와 자료의 발표 연도 또는 조사 기간을 명확하게 표시해줘. 서로 다른 출처에서 통계 수치가 다를 경우 그 차이도 설명해줘."
                     </p>
                 </div>
 
@@ -807,7 +810,7 @@
                         사용한 프롬프트 원문 (PDF Native Multimodal)
                     </div>
                     <p class="text-xs sm:text-sm text-custom-dark bg-white p-4 rounded leading-relaxed font-mono whitespace-pre-line border border-custom-muted/30">
-"첨부한 PDF는 한국의 딥페이크 범죄와 관련된 원본 자료야. 이 자료를 단순 요약하지 말고 다음 항목을 중심으로 분석해줘. 1. 자료의 제목과 발행기관 2. 자료의 조사 기간 3. 전체 페이지 수 4. 딥페이크 범죄와 관련된 핵심 통계 5. 연도별 범죄 발생 건수 6. 증가 또는 감소 추세 7. 표에서 확인할 수 있는 주요 특징 8. 자료에서 직접 확인할 수 있는 사실과 해석을 구분. 자료에 명시되지 않은 내용을 추측하지 말 것. 특히 통계 수치는 원본 자료에 적힌 값을 그대로 제시하고, 가능하면 해당 내용이 PDF의 몇 페이지에 있는지도 함께 표시해줘."
+                        "첨부한 PDF는 한국의 딥페이크 범죄와 관련된 원본 자료야. 이 자료를 단순 요약하지 말고 다음 항목을 중심으로 분석해줘. 1. 자료의 제목과 발행기관 2. 자료의 조사 기간 3. 전체 페이지 수 4. 딥페이크 범죄와 관련된 핵심 통계 5. 연도별 범죄 발생 건수 6. 증가 또는 감소 추세 7. 표에서 확인할 수 있는 주요 특징 8. 자료에서 직접 확인할 수 있는 사실과 해석을 구분. 자료에 명시되지 않은 내용을 추측하지 말 것. 특히 통계 수치는 원본 자료에 적힌 값을 그대로 제시하고, 가능하면 해당 내용이 PDF의 몇 페이지에 있는지도 함께 표시해줘."
                     </p>
                 </div>
 
@@ -1072,7 +1075,7 @@
                 </div>
             </div>
 
-                        <!-- Tab Content 2 -->
+            <!-- Tab Content 4 -->
             <div id="tab-content-4" class="hidden space-y-6">
                 <!-- Prompt Box -->
                 <div class="bg-custom-bg/40 rounded-lg p-6 border border-custom-muted/30">
@@ -1081,7 +1084,7 @@
                     </div>
                     <p class="text-xs sm:text-sm text-custom-dark bg-white p-4 rounded leading-relaxed font-mono whitespace-pre-line border border-custom-muted/30">
                         "사진이 칸을 넘어가지 않게 하고, 사진을 클릭하면 크게 볼 수 있도록 해줘. 그리고 프롬프트 길이가 15줄 이상 넘어가면 
-                        생략되도록 하고 클릭하면 전문을 볼 수 있게 수정해줘.""
+                        생략되도록 하고 클릭하면 전문을 볼 수 있게 수정해줘."
                     </p>
                 </div>
 
@@ -1096,6 +1099,53 @@
                         </button>
                         <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-48 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
                             <img src="research04-2.png" alt="답변 캡처 #2" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab Content 5 -->
+            <div id="tab-content-5" class="hidden space-y-6">
+                <!-- Prompt Box -->
+                <div class="bg-custom-bg/40 rounded-lg p-6 border border-custom-muted/30">
+                    <div class="text-custom-main font-extrabold text-sm mb-3">
+                        사용한 프롬프트 원문 (PDF Native Multimodal)
+                    </div>
+                    <p class="text-xs sm:text-sm text-custom-dark bg-white p-4 rounded leading-relaxed font-mono whitespace-pre-line border border-custom-muted/30">
+                        "@Docs
+
+                        앞서 분석한 자료를 바탕으로
+                        「Gemini 2.5 Pro 멀티모달 분석 및 솔루션 제안서」
+                        보고서 초안을 Google Docs 형식으로 구성해줘.
+
+                        다음 순서로 작성해줘.
+
+                        1. 연구 및 분석 대상 설정
+                        2. Deep Research 및 크로스 모달 분석
+                        3. Canvas 실무 솔루션 구현
+                        4. 기술적 한계 및 오류 분석
+                        5. 종합 평가 및 업무 생산성
+                        6. 새로운 멀티모달 AI 서비스 제안
+                        7. 결론
+                        8. 부록
+
+                        각 항목에서 실제 실험 결과와 사용자의 평가가 드러나도록 작성해줘.
+
+                        실제로 수행하지 않은 실험이나 측정값은 작성하지 말아줘."
+                    </p>
+                </div>
+
+                <!-- Answer Captures Placeholders -->
+                <div>
+                    <h3 class="text-sm font-extrabold text-custom-dark mb-3">
+                        Gemini 답변 캡처 이미지 (총 3개)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-48 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research05-2.png" alt="답변 캡처 #1" class="w-full h-full object-cover object-top rounded">
+                        </button>
+                        <button type="button" onclick="openLightbox(this)" class="capture-thumb border border-custom-muted/40 rounded-lg h-48 overflow-hidden bg-white p-2 cursor-zoom-in hover:shadow-md transition focus:outline-none">
+                            <img src="research05-1.png" alt="답변 캡처 #1" class="w-full h-full object-cover object-top rounded">
                         </button>
                     </div>
                 </div>
@@ -1249,41 +1299,41 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Idea Card 1 -->
+                    <!-- Card 1: 서비스 개요 -->
                     <div class="bg-custom-bg/40 p-5 rounded-lg border border-custom-muted/30 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-2">
-                                <span class="px-2 py-0.5 rounded bg-custom-dark text-white text-[10px] font-extrabold">아이디어 A</span>
-                                <span class="text-xs text-custom-main font-bold">수사 & 디지털 포렌식</span>
+                                <span class="px-2 py-0.5 rounded bg-custom-dark text-white text-[10px] font-extrabold">서비스 개요</span>
+                                <span class="text-xs text-custom-main font-bold">콘텐츠 신뢰성 검증</span>
                             </div>
                             <h4 class="text-base font-extrabold text-custom-dark mb-2">
-                                실시간 딥페이크 탐지 & 증거 채증 멀티모달 포렌식 어시스턴트
+                                DeepCheck: 멀티모달 딥페이크 검증 서비스
                             </h4>
                             <p class="text-xs text-custom-muted leading-relaxed font-medium mb-4">
-                                이미지, 동영상, 음성을 통합 분석하여 픽셀 왜곡 및 주파수 불일치를 탐지하고, 법적 제출용 포렌식 검증 보고서를 자동으로 생성하는 모바일/웹 수사 지원 AI 서비스.
+                                영상, 음성, 이미지, 텍스트를 종합적으로 분석하여 콘텐츠의 신뢰성을 확인하고 의심되는 부분을 설명해주는 AI 검증 서비스. 얼굴이나 픽셀만 보는 기존 방식과 달리, 입 모양과 음성의 불일치나 자막과 실제 발언의 차이처럼 여러 데이터 사이의 어긋남을 찾아냅니다.
                             </p>
                         </div>
                         <div class="bg-white p-3 rounded border border-custom-muted/20 text-xs text-custom-dark font-semibold">
-                            <strong class="text-custom-main">기대 효과:</strong> 불법영상 수사 및 검거 소요 시간을 일단위에서 시간 단위로 대폭 단축
+                            <strong class="text-custom-main">핵심 방식:</strong> 영상 ↔ 음성 ↔ 이미지 ↔ 텍스트 분석 결과를 서로 비교하는 교차 검증
                         </div>
                     </div>
 
-                    <!-- Idea Card 2 -->
+                    <!-- Card 2: 활용 사례 -->
                     <div class="bg-custom-bg/40 p-5 rounded-lg border border-custom-muted/30 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-2">
-                                <span class="px-2 py-0.5 rounded bg-custom-main text-white text-[10px] font-extrabold">아이디어 B</span>
-                                <span class="text-xs text-custom-main font-bold">피해자 보호 & 모니터링</span>
+                                <span class="px-2 py-0.5 rounded bg-custom-main text-white text-[10px] font-extrabold">활용 사례</span>
+                                <span class="text-xs text-custom-main font-bold">SNS 딥페이크 영상</span>
                             </div>
                             <h4 class="text-base font-extrabold text-custom-dark mb-2">
-                                딥페이크 피해 영상 2차 유포 방지 멀티모달 패스트트랙 모니터링
+                                판정이 아닌 '의심 근거'까지 설명하는 검증 결과
                             </h4>
                             <p class="text-xs text-custom-muted leading-relaxed font-medium mb-4">
-                                피해자의 이미지 특징점(Feature Vector)을 안전하게 암호화한 후, 텔레그램 및 SNS 딥웹 채널을 24시간 멀티모달 스캐닝하여 실시간 삭제 요청 및 방심위 신속 연동.
+                                유명인 인터뷰처럼 보이는 영상을 업로드하면 얼굴 → 발화 → 자막 → 원본 자료 순으로 분석한 뒤, "⚠️ 00:17~00:21 구간에서 입 모양과 음성의 시간적 일치도가 낮게 나타났습니다. 추가적인 확인이 필요합니다."처럼 이유와 함께 결과를 제공합니다.
                             </p>
                         </div>
                         <div class="bg-white p-3 rounded border border-custom-muted/20 text-xs text-custom-dark font-semibold">
-                            <strong class="text-custom-main">기대 효과:</strong> 디지털 성범죄 2차 가해 예방 및 삭제 조치 시간 90% 이상 단축
+                            <strong class="text-custom-main">설계 원칙:</strong> 실습에서 확인한 AI의 수치 오인식 문제를 반영해, 분석 결과를 사실로 단정하지 않고 원본 자료와 교차 검증
                         </div>
                     </div>
                 </div>
@@ -1383,16 +1433,18 @@
             const btn2 = document.getElementById('tab-btn-2');
             const btn3 = document.getElementById('tab-btn-3');
             const btn4 = document.getElementById('tab-btn-4');
+            const btn5 = document.getElementById('tab-btn-5');
             const content1 = document.getElementById('tab-content-1');
             const content2 = document.getElementById('tab-content-2');
             const content3 = document.getElementById('tab-content-3');
             const content4 = document.getElementById('tab-content-4');
+            const content5 = document.getElementById('tab-content-5');
             // Reset all buttons
-            [btn1, btn2, btn3, btn4].forEach(btn => {
+            [btn1, btn2, btn3, btn4, btn5].forEach(btn => {
                 if(btn) btn.className = "py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-bg text-custom-dark hover:bg-custom-muted/20 transition focus:outline-none";
             });
             // Hide all contents
-            [content1, content2, content3, content4].forEach(cnt => {
+            [content1, content2, content3, content4, content5].forEach(cnt => {
                 if(cnt) cnt.classList.add('hidden');
             });
 
@@ -1409,6 +1461,9 @@
             }else if (tabNum === 4) {
                 btn4.className = "py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-dark text-white transition focus:outline-none";
                 content4.classList.remove('hidden');
+            } else if (tabNum === 5) {
+                btn5.className = "py-2.5 px-5 text-xs sm:text-sm font-extrabold rounded bg-custom-dark text-white transition focus:outline-none";
+                content5.classList.remove('hidden');
             }
         }
 
